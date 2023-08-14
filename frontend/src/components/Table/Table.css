@@ -1,0 +1,241 @@
+/* Card Container */
+.card-container {
+  margin-top: 30px;
+}
+
+/* Card */
+.card {
+  box-shadow: 1px 2px 7px 0px #cecece;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  margin: 20px 5px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card-body {
+  overflow: hidden;
+  overflow-x: auto;
+  max-width: 84vw;
+}
+
+/* Search Bar Container */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  padding: 5px;
+  width: 85%;
+}
+
+/* Icon */
+.icon {
+  padding: 5px;
+  color: #aaa;
+}
+
+/* Input Field */
+.input-field {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+  flex: 1;
+  padding-left: 10px;
+}
+
+.input-field::placeholder {
+  color: #aaa;
+}
+
+/* Filter */
+.filter {
+  display: flex;
+}
+
+/* Overlay Dropdown */
+.overlay-dropdown {
+  position: fixed;
+  inset: 0;
+  background-color: transparent;
+  z-index: 1;
+}
+
+/* Checkbox List */
+.checkbox-list {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+/* Sort Button */
+.sortbtn {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background-color: #efefff;
+  border: 1px solid #c3c3c3;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+/* Sort Dropdown Content */
+.sort-dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 5px;
+  z-index: 1;
+  margin-top: 50px;
+}
+
+.sort-dropdown-content p {
+  margin: 0;
+}
+
+.sort-dropdown-content .checkbox-list {
+  display: flex;
+  margin: 0px 8px;
+  cursor: pointer;
+}
+
+.sort-dropdown-content input {
+  cursor: pointer;
+}
+
+/* Toggle Button Row */
+.toggle-btn-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+/* Card Pagination */
+.card-pagination {
+  padding: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Arrow */
+.arrow {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Page Number */
+.page-no {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  padding-bottom: 4px;
+}
+
+/* Empty Card */
+.empty-card {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.empty-card .icon {
+  font-size: 19px;
+  padding-top: 6px;
+}
+
+.empty-card .empty-card-title {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tr {
+  border-bottom: 1px solid #ddd;
+}
+th,
+td {
+  padding: 13px;
+  text-align: center;
+}
+
+/* Buttons */
+.employee-list-actions {
+  display: flex;
+  justify-content: center;
+}
+.action-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+.view-button {
+  background-color: rgb(152, 152, 152);
+}
+
+.edit-button {
+  background-color: rgb(3, 152, 3);
+}
+.delete-button {
+  background-color: red;
+}
+
+/* Styles for the pagination container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.pagination-container li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.pagination-container li a {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination-container .active-page a {
+  background-color: black;
+  color: #fff;
+}
+
+.pagination-container li a:hover {
+  background-color: #ddd;
+}
+
+.pagination-container .disabled {
+  pointer-events: none;
+  color: #ccc;
+}
